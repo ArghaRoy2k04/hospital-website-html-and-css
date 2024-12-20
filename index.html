@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Smart Ambulance Booking System by Tech Titans</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="shortcut icon" href="logo (1).png" type="image/x-icon">
+</head>
+<body>
+
+	<header>
+		<!-- <img src="logo (1).png" alt="Logo" width="40" height="40"> -->
+		<a href="#" class="logo"><i class="fas fa-hospital">Pulse Fleet</i></a>
+		
+		<nav class="navbar">
+			<a id="shift" href="index.html">home</a>
+			<a href="about.html">about</a>
+			<a href="service.html">services</a>
+			<a href="reviews.html">reviews</a>
+		</nav>
+		<div class="button">
+			<a href="login.html" class="booknow">BOOK NOW</a>
+		</div>
+
+
+	</header>
+
+	<section class="home">
+		<div class="content">
+			<h3>Meet Pulse Fleet</h3>
+			<h2>For Emergency Medical Service</h2>
+			<p>Help / Rescues the Patient in case of the Emergency situation by doing just a click. Medulance Ambulance comes right in front of the door for help.</p>
+			<a href="emergency.html" class="btn">Emergency</a>
+		</div>
+		<div class="image">
+			<img src="img/Ambulance-rafiki.webp" alt="">
+		</div>
+	</section>
+	<section class="contact">
+		<!-- <h1 class="heading"><span>contact</span> us</h1> -->
+
+		<!-- <div class="wrapper">
+			<div class="image">
+				<img src="img/img3.png" alt="">
+			</div>
+
+			<form action="">
+				<h3>book now</h3>
+				<input type="text" placeholder="your name" class="box">
+				<input type="address" placeholder="your address" class="box">
+				<input type="number" placeholder="your phone number" class="box">
+				<input type="date" class="box">
+				<input type="submit" value="Submit" class="btn">
+			</form>
+		</div> -->
+	</section>
+
+	<section class="about">
+		<h1 class="heading"; style="margin-bottom: 80px;">about <span>us</span></h1>
+
+		<div class="wrapper">
+			<div class="image">
+				<img src="img/img2.png" alt="">
+			</div>
+			<div class="content">
+				<h3>why you should choose us</h3>
+				<p>Enhanced Patient Care: With real-time medical data transmission and constant communication, patient care starts in the ambulance, reducing critical delays. Streamlined Workflow: The module's integrated approach ensures efficient utilization of resources, from ambulance dispatch to patient handover at the ER.</p>
+				<a href="about.html" class="btn">learn more</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="services">
+		<h1 class="heading";  style="margin-bottom: 40px";>our <span>services</span></h1>
+
+		<div class="box-container">
+			<div class="box">
+				<i class="fas fa-ambulance"></i>
+				<h3>24/7 ambulance</h3>
+				<p>GPS-enabled ambulances, manned by trained professionals, provide timely medical care and peace of mind.</p>
+				<a href="service.html" class="btn">read more</a>
+			</div>
+
+			<div class="box">
+				<i class="fas fa-notes-medical"></i>
+				<h3>Live Location Tracking</h3>
+				<p>Real-time GPS tracking of the user's location to ensure accurate pickup details. It enables quick response times, precise navigation, and efficient coordination with emergency services.</p>
+				<a href="service.html" class="btn">read more</a>
+			</div>
+
+			<div class="box">
+				<i class="fas fa-user-md"></i>
+				<h3>Ambulance Types</h3>
+				<p>Availability of various ambulance types (e.g., basic life support, advanced life support, neonatal ambulances, mortuary van/ambulances).
+					Clear descriptions of services and facilities in each ambulance type.</p>
+				<a href="service.html" class="btn">read more</a>
+			</div>
+
+			<div class="box">
+				<i class="fas fa-procedures"></i>
+				<h3>expert consultant & good facility</h3>
+				<p>Expert doctors provide guidance in real-time for ambulance services, ensuring accurate diagnosis and immediate care during emergencies. Their consultation streamlines decision-making, enhances patient outcomes, and supports seamless coordination between medical teams and emergency responders.</p>
+				<a href="service.html" class="btn">read more</a>
+			</div>
+
+			<!-- <div class="box">
+				<i class="fas fa-pills"></i>
+				<h3>pharmacy</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, nulla!</p>
+				<a href="#" class="btn">read more</a>
+			</div>
+
+			<div class="box">
+				<i class="fas fa-heartbeat"></i>
+				<h3>best care</h3>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, nulla!</p>
+				<a href="#" class="btn">read more</a>
+			</div>
+		</div> -->
+	</section>
+<br>
+	<section class="footer">
+		<div class="box-container">
+			<div class="box">
+				<h3>quick links</h3>
+				<a href="index.html">home</a>
+				<a href="about.html">about</a>
+				<a href="service.html">services</a>
+				<a href="#">reviews</a>
+			</div>
+
+			<div class="box">
+				<h3>services offered</h3>
+				<a href="service.html">Individual</a>
+				<a href="service.html">Hospital</a>
+				<a href="service.html">Government</a>
+			</div>
+
+			<div class="box">
+				<h3>our socials</h3>
+				<a href="https://www.facebook.com"><i class="fab fa-facebook"></i> facebook</a>
+				<a href="https://www.twitter.com"><i class="fab fa-twitter"></i> twitter</a>
+				<a href="https://www.instagram.com"><i class="fab fa-instagram"></i> instagram</a>
+				<a href="https://www.google.com"><i class="fab fa-linkedin"></i> google</a>
+			</div>
+		</div>
+	</section>
+
+
+	<script>
+		let menu = document.querySelector('#menubtn'),
+		navbar = document.querySelector('.navbar');
+
+		menu.onclick = () =>{
+			menu.classList.toggle('fa-times');
+			navbar.classList.toggle('active');
+		}
+
+		window.onscroll = () =>{
+			menu.classList.remove('fa-times');
+			navbar.classList.remove('active');
+		}
+	</script>
+
+	
+</body>
+</html>

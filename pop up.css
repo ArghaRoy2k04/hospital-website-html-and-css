@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  
+  header {
+    background-color: #395AA2;
+    color: white;
+    padding: 1rem 0;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  main {
+    padding: 2rem;
+  }
+  
+  h2 {
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  /* Choice Container */
+  .choice-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 800px;
+  }
+  
+  .choice-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: #f9f9f9;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .choice-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .choice-card h3 {
+    color: #0096c7;
+    margin: 0 0 1rem 0;
+  }
+  
+  .choice-card p {
+    color: #555;
+    margin-bottom: 1rem;
+  }
+  
+  .choice-card button {
+    background-color: #0d0349;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .choice-card button:hover {
+    background-color: #6074b8;
+  }
+  
+  /* Footer */
+  /* footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    margin-top: 16.29rem;
+  } */
+  .footer{
+    background: #f1f8f6;
+}
+.footer .box-container{
+    margin-top: cm;
+    /* margin-left: 10px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+}
+.footer .box-container .box h3{
+    /* font-size: 2rem; */
+    color: var(--black);
+    margin-top: 50px;
+    /* padding-top: 4rem; */
+    /* padding-bottom: 2rem; */
+}
+.footer .box-container .box a{
+    display: block;
+    /* font-size: 1.5rem; */
+    color: var(--light);
+    padding: 1rem 0;
+}
+.footer .bottom{
+    padding: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--light);
+    border-top: var(--border); 
+}
+.footer .bottom span{
+    color: var(--blue);
+    font-weight: 600;
+}

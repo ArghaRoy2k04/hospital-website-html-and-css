@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+  }
+  
+  header {
+    background-color: #1775f1;
+    color: white;
+    padding: 0.2rem;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+#A{
+    line-height: 2.5;
+    text-align: center;
+}
+#A p1{
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+    /* margin-left: 15rem; */
+    font-weight: bold;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    /* color: #707070; */
+}
+#A p2{
+    /* margin-left: 18rem; */
+    padding-top: 30px;
+    height: 60px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    color: #707070;
+  }
+  
+  main {
+    padding: 60px 10px 10px 450px;
+  }
+  #review-form {
+    background-color: #fff;
+    /* height: 20px; */
+    width: 480px;
+    padding: 5rem;
+    
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  form label {
+    margin-top: 1rem;
+  }
+  
+  form input, form textarea, form button {
+    padding: 0.5rem;
+    margin-top: 1rem;
+    width: 100%;
+  }
+  
+  form button {
+    background-color: #fc2361;
+    width: 500px;
+    height: 50px;
+    font-weight: bold;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #1775f1;
+  }
+  .footer{
+    background: #f1f8f6;
+}
+.footer .box-container{
+    margin-top: 1cm;
+    margin-left: 200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+}
+.footer .box-container .box h3{
+    /* font-size: 2rem; */
+    color: var(--black);
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+.footer .box-container .box a{
+    display: block;
+    /* font-size: 1.5rem; */
+    color: var(--light);
+    padding: 1rem 0;
+}
+.footer .bottom{
+    padding: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--light);
+    border-top: var(--border); 
+}
+.footer .bottom span{
+    color: var(--blue);
+    font-weight: 600;
+}
+

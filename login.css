@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+*{
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+:root{
+    --blue: #1775f1;
+    --dark-blue: #0c5fcd;
+    --black: #444;
+    --light: #777;
+    --box-shadow: .5rem .5rem 0 rgba(0,0,133, .2);
+    --border: .2rem solid var(--blue);
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth; 
+}
+header{
+    position: fixed;
+    padding: 2rem 9%;
+    top: 0; left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+header .logo{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--black);
+}
+header .logo i{
+    font-family: "Dancing Script", serif;
+    color: var(--blue);
+}
+#shift{
+    margin-left: 150px;
+}
+header .navbar a{
+    font-size: 1.7rem;
+    color: var(--light);
+    /* margin-left: 23rem;  */
+    margin-right: 70px;
+}
+.button .booknow {
+    color:#fc2361;
+    border:1px solid #1775f1;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.button .booknow:hover {
+    color: #fff;
+    background-color: #1775f1;
+}
+.form{
+    width: 380px;
+    height:520px;
+    /* background: linear-gradient(to top, rgba(0,0,0,0.8)50%,rgba(0,0,0,0.8)50%); */
+    position: absolute;
+    top: 150px;
+    left: 550px;
+    transform: translate(0%,-5%);
+    border-radius: 10px;
+    padding: 31px;
+}
+
+.form h2{
+    width: 325px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 22px;
+    background-color: #0c5fcd;
+    border-radius: 10px;
+    margin: -8px;
+    padding: 8px;
+}
+
+.form input{
+    width: 320px;
+    height: 45px;
+    background: transparent;
+    border-bottom: 1px solid #fc2361;
+    /* text-align:center; */
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #707070;
+    font-size: 15px;
+    font-style: italic;
+    letter-spacing: 1px;
+    margin-top: 30px;
+}
+
+.form input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: #707070;
+}
+
+.btnn{
+    width: 320px;
+    height: 40px;
+    background: #fc2361;
+    border:1px solid #fc2361;
+    margin-top: 35px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.btnn:hover{
+    background: #1775f1;
+    border:1px solid #1775f1;
+}
+.btnn a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+.btnn a:hover{
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.5s ease;
+}
+.form .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding-top: 20px;
+    text-align: center;
+}
+.form .link a{
+    text-decoration: none;
+    color: #ff7200;
+}
+.liw{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+.icons a{
+    text-decoration: none;
+    color: #fff;
+}
+.icons ion-icon{
+    color: #707070;
+    font-size: 35px;
+    padding-left: 35px;
+    padding-top: 10px;
+    transition: 0.3s ease;
+}
+.icons ion-icon:hover{
+    color: #ff7200;
+}
+.footer{
+    background: #f1f8f6;
+}
+.footer .box-container{
+    margin-top: 18cm;
+    margin-left: 200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+}
+.footer .box-container .box h3{
+    font-size: 2rem;
+    color: var(--black);
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+}
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.5rem;
+    color: var(--light);
+    padding: 1rem 0;
+}
+.footer .bottom{
+    padding: 1rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--light);
+    border-top: var(--border); 
+}
+.footer .bottom span{
+    color: var(--blue);
+    font-weight: 600;
+}
+
+/* responsive */
+@media (max-width: 991px) {
+    html{
+        font-size: 55%;
+    }
+    header{
+        padding: 2rem;
+    }
+    section{
+        padding: 2rem;
+    }
+}

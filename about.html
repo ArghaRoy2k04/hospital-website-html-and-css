@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About page of Smart Ambulance Booking System</title>
+  <link rel="stylesheet" href="about.css">
+	<link rel="shortcut icon" href="logo (1).png" type="image/x-icon">
+</head>
+<body>
+    <header>
+		<!-- <img src="logo (1).png" alt="Logo" width="80" height="80"> -->
+		<a href="#" class="logo"><i class="fas fa-hospital">Pulse Fleet</i></a>
+		
+		<nav class="navbar">
+			<a id="shift" href="index.html">home</a>
+			<a href="about.html">about</a>
+			<a href="service.html">services</a>
+			<a href="reviews.html">reviews</a>
+		</nav>
+		<div class="button">
+			<a href="login.html" class="booknow">BOOK NOW</a>
+		</div>
+
+
+	</header>
+    <div id="A">
+  <section class="about">
+    <h1>What is PulseFleet</h1>
+    <img src="img/img1.jpg" alt="Ambulance" class="ambulance-image">
+    <p>
+      PulseFleet is India's GPS-based technology platform for fast and reliable first-point medical attention.<br>
+      With an increasing emphasis on promoting independent living today, having access to the nearest ambulance to you can provide much-needed peace of mind in a worst-case scenario.
+    </p>
+    
+    <h2 style="font-size: 35px;">History</h2>
+    <p>
+      Emergency response is the most critical to the lifeline of any country. PulseFleet wants to inspire breakthroughs in the way India looks at ambulances and first-point medical attention and to touch lives. PulseFleet was started to make finding an ambulance as easy as finding food or taxis these days to assist lives. PulseFleet is an integrated emergency ambulance booking and tracking system designed to provide first-point medical attention.
+    </p>
+    
+    <h2 id="B">What We Offer</h2>
+    
+    <div class="offerings">
+      <div class="offering">
+        <h3>24x7 Ambulance Services</h3>
+        <p>Our 24/7 GPS-enabled ambulances, manned by trained professionals, provide timely medical care and peace of mind.</p>
+      </div>
+      <div class="offering">
+        <h3>Scheduled Booking</h3>
+        <p>Book ambulances in advance for a hassle-free hospital visit.</p>
+      </div>
+      <div class="offering">
+        <h3>Multiple Payment Options</h3>
+        <p>Flexible payment methods for your convenience.</p>
+      </div>
+    </div>
+  </section>
+</div>
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="service.html">services</a>
+            <a href="#">reviews</a>
+        </div>
+
+        <div class="box">
+            <h3>services offered</h3>
+            <a href="service.html">Individual</a>
+            <a href="service.html">Hospital</a>
+            <a href="service.html">Government</a>
+        </div>
+
+        <div class="box">
+            <h3>our socials</h3>
+            <a href="https://www.facebook.com"><i class="fab fa-facebook"></i> facebook</a>
+            <a href="https://www.twitter.com"><i class="fab fa-twitter"></i> twitter</a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i> instagram</a>
+            <a href="https://www..com"><i class="fab fa-linkedin"></i> google</a>
+        </div>
+    </div>
+</section>
+
+
+<script>
+    let menu = document.querySelector('#menubtn'),
+    navbar = document.querySelector('.navbar');
+
+    menu.onclick = () =>{
+        menu.classList.toggle('fa-times');
+        navbar.classList.toggle('active');
+    }
+
+    window.onscroll = () =>{
+        menu.classList.remove('fa-times');
+        navbar.classList.remove('active');
+    }
+</script>
+
+
+</body>
+</html>

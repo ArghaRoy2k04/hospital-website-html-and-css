@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services page of Smart Ambulance Booking System</title>
+  <link rel="stylesheet" href="service.css">
+	<link rel="shortcut icon" href="logo (1).png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <h1>SERVICES</h1>
+  </header>
+  <div class="container">
+    <div class="section">
+      <h2>Individual</h2>
+      <p>
+        Anyone can book an ambulance through our website. This initiative aims to establish a dedicated ambulance service that operates continuously, providing immediate medical transportation for individuals in need of emergency care. This service is accessible at any time through our designated webpage.
+      </p>
+    </div>
+    <div class="section">
+      <h2>Hospital</h2>
+      <p>
+        <strong>Stationed Dedicated Ambulance:</strong> PulseFleet manages the end-to-end operations of the ambulance fleet of the hospital, including fleet management and the manpower inside the ambulances.
+      </p>
+      <p>
+        <strong>Emergency Management System:</strong> We provide dedicated ambulances, manpower, and in-house technology to assist with real-time tracking of ambulances.
+      </p>
+    </div>
+    <div class="section">
+      <h2>Government</h2>
+      <p>
+        <strong>Technology Integration:</strong> Technology plays a vital role in saving lives. Ambulance services now use advanced technologies to better track vehicles and seamlessly transfer data between ambulances and the back-end team of doctors.
+      </p>
+      <p>
+        <strong>Working with PSU:</strong> PulseFleet partners with PSUs like NTPC and Coal India to provide dedicated ambulances, in-house medical rooms, trained manpower, and paramedics. Our vast network of resources ensures comprehensive care for all our patients.
+      </p>
+    </div>
+  </div>
+  <section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="index.html">home</a>
+            <a href="about.html">about</a>
+            <a href="service.html">services</a>
+            <a href="reviews.html">reviews</a>
+        </div>
+
+        <div class="box">
+            <h3>services offered</h3>
+            <a href="service.html">Individual</a>
+            <a href="service.html">Hospital</a>
+            <a href="service.html">Government</a>
+        </div>
+
+        <div class="box">
+            <h3>our socials</h3>
+            <a href="https://www.facebook.com"><i class="fab fa-facebook"></i> facebook</a>
+            <a href="https://www.twitter.com"><i class="fab fa-twitter"></i> twitter</a>
+            <a href="https://www.instagram.com"><i class="fab fa-instagram"></i> instagram</a>
+            <a href="https://www.google.com"><i class="fab fa-linkedin"></i> google</a>
+        </div>
+    </div>
+</section>
+
+
+<script>
+    let menu = document.querySelector('#menubtn'),
+    navbar = document.querySelector('.navbar');
+
+    menu.onclick = () =>{
+        menu.classList.toggle('fa-times');
+        navbar.classList.toggle('active');
+    }
+
+    window.onscroll = () =>{
+        menu.classList.remove('fa-times');
+        navbar.classList.remove('active');
+    }
+</script>
+</body>
+</html>

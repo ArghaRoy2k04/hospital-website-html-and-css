@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emergency Booking page of Smart Ambulance Booking System</title>
+  <link rel="stylesheet" href="emergency.css">
+  <link rel="shortcut icon" href="logo (1).png" type="image/x-icon">
+</head>
+<body>
+  <header>
+    <h1>Emergency Ambulance Booking</h1>
+  </header>
+
+  <main>
+    <section id="booking-form-section">
+      <h2>Book an Ambulance Now</h2>
+      <p>Please fill out the form below for immediate assistance:</p>
+      <form id="emergency-booking-form">
+<!-- 
+        <label for="location">Destination Location:</label>
+        <input type="text" id="location" name="location" placeholder="Enter your location" required> -->
+
+        <label for="emergency-type">Emergency Type:</label>
+        <select id="emergency-type" name="emergencyType" required>
+            
+            <option value="" disabled selected>Select Emergency Type</option>
+            <option value="accident">Accident</option>
+            <option value="heart-attack">Heart Attack</option>
+            <!-- <option value="stroke">Stroke</option> -->
+            <option value="pregnancy">Pregnancy</option>
+            <option value="other">Other</option>
+        </select>
+        <input type="submit" value="Get Location" class="btn" onclick="getLocation()">
+        <p class="location" id="locationDisplay">Location: Not Set</p>
+        <script>
+            // Function to get user's current location
+            function getLocation() {
+                const locationDisplay = document.getElementById('locationDisplay');
+                if (navigator.geolocation) {
+                    navigator.geolocation.getCurrentPosition(
+                        (position) => {
+                            const { latitude, longitude } = position.coords;
+                            locationDisplay.textContent = `Location: Latitude ${latitude}, Longitude ${longitude}`;
+                        },
+                        (error) => {
+                            locationDisplay.textContent = "Location: Unable to retrieve location.";
+                            console.error(error);
+                        }
+                    );
+                } else {
+                    locationDisplay.textContent = "Location: Geolocation is not supported by your browser.";
+                }
+            }
+        
+            // Form submission handler
+            document.getElementById('registerForm').addEventListener('submit', function (e) {
+                e.preventDefault();
+                const mobile = document.getElementById('mobile').value;
+                const email = document.getElementById('email').value;
+                const password = document.getElementById('password').value;
+                const location = document.getElementById('locationDisplay').textContent;
+        
+                console.log('User Details:', { mobile, email, password, location });
+                alert('Registration successful!');
+            });
+        </script>
+
+
+        <label for="additional-info">Additional Information:</label>
+        <textarea id="additional-info" name="additionalInfo" rows="4" placeholder="Provide any additional details"></textarea>
+
+        <button onclick="window.location.href='review-input.html'"></a>Book Ambulance</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- <footer>
+    <p>&copy; 2024 Ambulance Booking System. All rights reserved.</p>
+  </footer> -->
+  <section class="footer">
+		<div class="box-container">
+			<div class="box">
+				<h3>quick links</h3>
+				<a href="index.html">home</a>
+				<a href="about.html">about</a>
+				<a href="service.html">services</a>
+				<a href="reviews.html">reviews</a>
+			</div>
+
+			<div class="box">
+				<h3>services offered</h3>
+				<a href="service.html">Individual</a>
+				<a href="service.html">Hospital</a>
+				<a href="service.html">Government</a>
+			</div>
+
+			<div class="box">
+				<h3>our socials</h3>
+				<a href="https://www.facebook.com"><i class="fab fa-facebook"></i> facebook</a>
+				<a href="https://www.twitter.com"><i class="fab fa-twitter"></i> twitter</a>
+				<a href="https://www.instagram.com"><i class="fab fa-instagram"></i> instagram</a>
+				<a href="https://www.google.com"><i class="fab fa-linkedin"></i> google</a>
+			</div>
+		</div>
+
+	</section>
+
+ 
+</body>
+</html>
